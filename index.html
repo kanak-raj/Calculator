@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+</head>
+<body>
+    <div class="border border-3 border-info container w-50 bg-light bg-gradient text-white shadow-lg rounded position-relative" style="margin-top: 15rem;">
+        <input id="calc" class="mt-2 w-100" type="text"  placeholder="Start Calculating....." style="height: 2.5rem; font-weight: bold;">
+        <div class="container">
+            <div class="row">
+                <button class="col m-2 ms-0 btn btn-black bg-info" onclick="calc.value+='0'">0</button>
+                <button onclick="calc.value+='1'" class="col m-2 btn btn-black bg-info" >1</button>
+                <button onclick="calc.value+='2'" class="col m-2 btn btn-black bg-info">2</button>
+                <button onclick="calc.value+='+'" class="col m-2 me-0 btn btn-black bg-danger">+</button>
+            </div>
+            <div class="row">
+                <button onclick="calc.value+='3'" class="col m-2 ms-0 btn btn-black bg-info">3</button>
+                <button onclick="calc.value+='4'" class="col m-2 btn btn-black bg-info">4</button>
+                <button onclick="calc.value+='5'" class="col m-2 btn btn-black bg-info">5</button>
+                <button onclick="calc.value+='-'" class="col m-2 me-0 btn btn-black bg-warning">-</button>
+            </div><div class="row">
+                <button onclick="calc.value+='6'" class="col m-2 ms-0 btn btn-black bg-info">6</button>
+                <button onclick="calc.value+='7'" class="col m-2 btn btn-black bg-info">7</button>
+                <button onclick="calc.value+='8'" class="col m-2 btn btn-black bg-info">8</button>
+                <button onclick="calc.value+='*'" class="col m-2 me-0 btn btn-black" style="background-color: 
+                rgb(88, 216, 88);">X</button>
+            </div><div class="row">
+                <button onclick="calc.value+='9'" class="col m-2 ms-0 btn btn-black bg-info">9</button>
+                <button onclick="calc.value=''" class="col m-2 btn btn-black" style="background-color: rgb(212, 135, 19);">C</button>
+                <button onclick="calc.value=eval(calc.value)" class="col m-2 btn btn-black bg-info">=</button>
+                <button onclick="calc.value+='/'" class="col m-2 me-0 btn btn-black " style="background-color: pink;">&#247</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
